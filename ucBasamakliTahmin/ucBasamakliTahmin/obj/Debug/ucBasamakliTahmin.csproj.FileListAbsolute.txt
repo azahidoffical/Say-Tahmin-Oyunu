@@ -8,4 +8,5 @@ C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasa
 C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.csproj.CoreCompileInputs.cache
 C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.exe
 C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.pdb
-C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.exe.config
+C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.FormGiris.resources
+C:\Users\azahi\source\repos\ucBasamakliTahmin\ucBasamakliTahmin\obj\Debug\ucBasamakliTahmin.FormKayit.resources
