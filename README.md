@@ -1,71 +1,45 @@
-<img width="1920" height="1080" alt="Ekran Görüntüsü (114)" src="https://github.com/user-attachments/assets/03096c6b-0224-4729-8a6e-1415a3f8542a" />
+# C# Üç Basamaklı Sayı Tahmin Oyunu
 
-🎯 3 Basamaklı Tahmin Oyunu
-C# WinForms | + / – İpucu Sistemi | Rakamları Farklı Sayı Üretimi
+Bu proje, C# Windows Forms ve SQL Server kullanılarak geliştirilmiş, veritabanı bağlantılı bir sayı tahmin oyunudur. Kullanıcılar sisteme kayıt olup giriş yaptıktan sonra, seçtikleri zorluk seviyesine göre (3, 4 veya 5 basamaklı) gizli sayıyı bulmaya çalışırlar.
 
-Bu proje, 3 basamaklı ve rakamları birbirinden farklı bir sayıyı tahmin etmeye çalıştığınız küçük bir WinForms oyunudur.
-Her tahminde size şu bilgiler verilir:
+## 🎯 Projenin Amacı
+* C# ve ADO.NET ile SQL Server veri tabanı işlemlerini (CRUD) uygulamak.
+* Algoritma kurma ve mantıksal kıyaslama yeteneklerini geliştirmek.
+* Kullanıcı dostu arayüz tasarımı yapmak.
 
-+N → Doğru rakam doğru yerde
+## 🚀 Özellikler
 
-–M → Doğru rakam yanlış yerde
+* **Kullanıcı Sistemi:** Yeni üye kaydı (`FormKayit`) ve kullanıcı girişi (`FormGiris`).
+* **Dinamik Zorluk Seviyesi:** 3, 4 veya 5 basamaklı oyun seçeneği.
+* **Görsel İpuçları:** * 🟩 **Yeşil:** Rakam ve yeri doğru.
+    * 🟧 **Turuncu:** Rakam var ama yeri yanlış.
+    * 🟥 **Kırmızı:** Rakam sayıda yok.
+* **Akıllı Yönlendirme:** Tahmin edilen sayının gizli sayıdan büyük veya küçük olduğuna dair ok işaretli (↑ ↓) ipuçları.
+* **Skor Tablosu:** En yüksek puanı alan oyuncuların listelendiği `DataGridView` alanı.
+* **Sanal Klavye:** Ekrana basarak sayı girişi yapabilme.
 
-Tahmin daha küçük mü büyük mü yönlendirmesi
+## 🛠️ Kullanılan Teknolojiler
 
-Toplam 10 tahmin hakkı
+* **Dil:** C# (.NET Framework)
+* **Arayüz:** Windows Forms Application
+* **Veritabanı:** Microsoft SQL Server (LocalDB veya SQLEXPRESS)
+* **Kütüphaneler:** `System.Data.SqlClient`, `System.Drawing`, `System.Windows.Forms`
 
-🖼️ Oyun Özellikleri
+## ⚙️ Kurulum ve Çalıştırma
 
-✔ 3 basamaklı benzersiz rakamlı rastgele sayı üretimi
-✔ Tahmin giriş kontrolü (100–999 arası + rakamlar birbirinden farklı)
-✔ + / – hesaplayıcı (Mastermind mantığı)
-✔ Daha büyük / daha küçük ipucu
-✔ Tahmin geçmişi listesi
-✔ Başlangıç ve bitiş kontrollü oyun akışı
-✔ WinForms ile sade arayüz
+1.  Projeyi bilgisayarınıza indirin veya klonlayın.
+2.  **Veritabanı Ayarı:**
+    * SQL Server'ınızda `numberGame` adında bir veritabanı oluşturun.
+    * Aşağıdaki tabloları oluşturun:
+        * `Kullanicilar` (Ad, Soyad, Telefon, Eposta, OyuncuAdi, Sifre)
+        * `Skorlar` (OyuncuAdi, Puan, BasamakSayisi, Tarih)
+3.  **Connection String:**
+    * Kod içerisindeki `connectionString` değişkenini kendi bilgisayarınızın SQL sunucu adına göre güncelleyin:
+    * `Data Source=SENIN_BILGISAYAR_ADIN\SQLEXPRESS;Initial Catalog=numberGame;Integrated Security=True`
+4.  Visual Studio ile projeyi açıp `Start` tuşuna basın.
 
-📷 Ekran Görüntüsü
+## 📷 Ekran Görüntüleri
+*(Buraya oyunun çalıştığına dair 1-2 ekran görüntüsü eklerseniz GitHub'da çok şık durur)*
 
-(İstersen görüntü yollayıp ekleyebilirim)
-
-🚀 Kurulum ve Çalıştırma
-
-1️⃣ Projeyi klonla
-
-git clone https://github.com/kullaniciadi/uc-basamakli-tahmin.git
-
-
-2️⃣ Visual Studio ile aç
-
-3️⃣ Form1.cs içinde oyun mantığı hazırdır — direkt çalıştırabilirsin.
-
-4️⃣ Start butonuna bas → tahmin etmeye başla 🎉
-
-🧠 Oyun Mantığı (Kısaca)
-
-Örnek: Gizli sayı 572
-
-Tahmin	+	–	Açıklama
-856	+0	–1	"5" rakamı var ama yeri yanlış
-572	+3	–0	Hepsi doğru → Kazandın
-📁 Dosya Yapısı
-📂 ProjeKlasörü
- ├── Form1.cs
- ├── Form1.Designer.cs
- ├── Program.cs
- ├── README.md
- └── ... WinForms dosyaları
-
-🛠 Kullanılan Teknolojiler
-
-C# .NET Framework / WinForms
-
-Random(), string karşılaştırma, input validation
-
-🤝 Katkıda Bulun
-
-PR atabilir, hata bildirebilir veya özellik önerebilirsin.
-
-📜 Lisans
-
-MIT Lisansı
+---
+**Geliştirici:** [Adın Soyadın]
